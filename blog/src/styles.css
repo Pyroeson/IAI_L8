@@ -1,0 +1,142 @@
+
+.navbar{
+  width: 100%;
+  background: #000033;
+}
+
+.display_off {
+  display: none;
+}
+
+.display_on {
+  display: block;
+}
+.przyciski{
+  margin-top: 220px;
+  margin-left: 15px;
+}
+
+.quiz_pytania{
+  width: 50%;
+}
+
+.quiz-bg{
+  background-color:#FFFF99;
+}
+
+.quiz_start-bg {
+  background-color:#FFCCFF;
+}
+
+button {
+  height:50px;
+  width:100px;
+}
+
+.menu {
+  font-size: 50px;
+  text-align: center;
+}
+
+.center {
+  text-align:center;
+}
+
+.stop{
+  pointer-events: none;
+}
+
+.poprawne{
+  border: solid 2px green;
+}
+
+.zle{
+  border: solid 2px red;
+}
+
+.myButton:hover{
+  background-color: grey;
+}
+
+.napisy{
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.myButton{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: yellow;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.is-invalid{
+  border: solid 1px red;
+}
+
+.wiek{
+  width: 50px;
+}
+.napis{
+  color: red;
+}
+
+.zdjecie{
+  width: 100%;
+}
+
+ul{
+  background: #000033;
+  height: 37px;
+  font-size: x-large;
+}
+
+ul li{
+  display: inline;
+}
+
+.map-bg{
+  background:#ECECEC;
+}
+
+.home-bg{
+  background:palegoldenrod;
+}
+
+.contact-bg{
+  background:#99FFFF;
+}
+
+.mapa{
+  width: 100%;
+}
+
+p{
+  margin: 5px;
+}
+
+a{
+  transition: all 1s;
+  padding: 3px;
+}
+
+a:hover{
+  background-color: gold;
+  text-decoration: none;
+}
+
+.lista{
+  background-color:#ECECEC;
+}
+
+.lista li{
+  display: block;
+}

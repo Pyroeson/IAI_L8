@@ -1,0 +1,91 @@
+<div class="container-fluid contact-bg">
+
+  <div class="col-md-13">
+    <iframe align="right" width="50%" height="400" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/40156276&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+  </div>
+
+  <form class="needs-validation" novalidate>
+    <div class="row">
+      <div class="col-md-7">
+        <fieldset>
+
+          <legend>Uzupelnij dane:</legend>
+          <div class="form-group">
+            <label for="imie">Podaj imie</label>
+            <input class="napisy" type="text" id="imie" placeholder="Radek">
+            <small><p class="napis" id="napis_wyswietl"></p></small>
+          </div>
+
+          <div class="form-group">
+            <label for="nazwisko">Podaj nazwisko</label>
+            <input class="napisy" type="text" id="nazwisko" placeholder="Zielonka">
+            <small><p class="napis" id="napis_wyswietl2"></p></small>
+          </div>
+
+
+          <div class="form-group">
+            <label for="emial">Podaj email</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+              </div>
+              <input type="email" class="form-control" id="emial" placeholder="radek_zielonka@example.com"
+                     aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Prosze wpisać adres emial
+              </div>
+            </div>
+
+
+            <br>Wybierz plec
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="radio1" name="radio-stacked" required>
+              <label class="custom-control-label" for="radio1">Mezczyzna</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input type="radio" class="custom-control-input" id="radio2" name="radio-stacked" required>
+              <label class="custom-control-label" for="radio2">Kobieta</label>
+              <div class="invalid-feedback">Prosze wybrać poprawnie płeć</div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="Tekst">Opis</label>
+              <textarea class="form-control" id="Tekst" rows="8" required></textarea>
+              <div class="invalid-feedback">
+                Prosze podać opis
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <label for="age">Wiek</label>
+              <input class="wiek" id="number" type="number" name="age" id="age" min="1" max="110">
+              <small class="napis" id="napis_wyswietl3"></small>
+              <div>
+
+                <br>
+                <div class="form-group">
+                  <select class="custom-select" required>
+                    <option value="">Wybierz stan cywilny</option>
+                    <option value="1">Panna</option>
+                    <option value="2">Kawaler</option>
+                    <option value="3">Zielonka</option>
+                  </select>
+                  <div class="invalid-feedback">Prosze uzupełnić stan cywilny</div>
+                </div>
+
+
+                <button class="btn btn-primary" id="button" type="submit" onclick="walidacja()" value="submit">Wyślij
+                </button>
+                <button class="btn btn-secondary" id="clear" type="reset" value="reset">Wyczyść</button>
+
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </form>
+</div>
