@@ -10,10 +10,19 @@ import { MapaComponent } from './components/mapa/mapa.component';
 import { BlogComponent } from './components/blog/blog.component';
 
 import {RouterModule, Routes} from '@angular/router';
+import { BlogItemComponent } from './components/blog-item/blog-item.component';
+import { BlogItemTextComponent } from './components/blog-item-text/blog-item-text.component';
+import { BlogItemImageComponent } from './components/blog-item-image/blog-item-image.component';
+import { BlogItemDetailComponent } from './components/blog-item-detail/blog-item-detail.component';
 
 
 
 const appRoutes: Routes = [
+  {
+    path: 'blog/detail/:id',
+    component: BlogItemDetailComponent
+  },
+
   {
     path: '',
     component: HomeComponent
@@ -39,7 +48,11 @@ const appRoutes: Routes = [
     ContactComponent,
     QuizComponent,
     MapaComponent,
-    BlogComponent
+    BlogComponent,
+    BlogItemComponent,
+    BlogItemTextComponent,
+    BlogItemImageComponent,
+    BlogItemDetailComponent
   ],
   imports: [
     BrowserModule,
